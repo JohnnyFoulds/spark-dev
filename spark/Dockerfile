@@ -18,7 +18,7 @@ RUN echo "$LOG_TAG update" && \
 RUN echo "$LOG_TAG installing spark-${SPARK_VERSION}" && \
 	mkdir /usr/spark && \
 	cd /usr/spark && \
-	wget --no-verbose archive.apache.org/dist/spark/spark-${SPARK_VERSION}/${SPARK_TAR} && \
+	wget archive.apache.org/dist/spark/spark-${SPARK_VERSION}/${SPARK_TAR} && \
 	tar xvzf ${SPARK_TAR} && \
 	export PATH=$PATH:$SPARK_HOME/bin && \
 	rm $SPARK_TAR
