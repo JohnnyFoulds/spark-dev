@@ -19,8 +19,19 @@ The headless JRE was selected because it is much smaller than the full openjdk-1
 ### Scala
 This image is build `FROM sparkdev-base` and installs Scala 2.12.8. A later version can be installed by changing the Dockerfile, but this choice was again made because the latest version is significantly larger and does not fit with the idea of configuring a relatively lightweight development environment.
 
+### Spark
+The image is build `FROM sparkdev-scala` and installs spark-2.4.3-bin-hadoop2.7.
 
 ## Apache Zeppelin
 An important part of the development environment will also be to have Zeppelin available, the intention is to have that as a new Dockerfile that builds on the original environment created in this project.
 
 A possible shortcut to all of this is to just use the official Apache Zeppelin container on [Docker Hub](https://hub.docker.com/r/apache/zeppelin) and this will definitely be used as reference.
+
+## Lessons Learned
+You can see that although an attempt is made to install the minimum required components the Docker Images still grows in size rapidly.
+
+![Docker Image Sizes](images/image-sizes.png)
+
+Unless you want something very specific, perhaps a development environment with specific version numbers, the effort might be better spend to just use existing Docker Images from "official" sources such as these:
+Cloudera Quickstart Image - `docker pull cloudera/quickstart:latest`
+Apache Zeppelin Image - `docker pull apache/zeppelin:0.8.1`
