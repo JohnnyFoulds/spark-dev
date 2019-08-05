@@ -5,6 +5,9 @@ On the [References](https://github.com/JohnnyFoulds/spark-dev/wiki/References) p
 
 The environment will be set up as a stand alone docker container with the minimum amount of software installed.
 
+## Docker Containers
+### Base
+
 ## Apache Zeppelin
 An important part of the development environment will also be to have Zeppelin available, the intention is to have that as a new Dockerfile that builds on the original environment created in this project.
 
