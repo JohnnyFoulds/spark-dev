@@ -12,18 +12,6 @@ RUN echo "$LOG_TAG update" && \
 RUN echo "$LOG_TAG install basic packages" && \
     apt-get install -y wget curl ssh git
 
-
-#RUN echo "$LOG_TAG update and install basic packages" && \
-#    apt-get -y update && \
-#    apt-get install -y locales && \
-#    locale-gen $LANG && \
-#    apt-get install -y software-properties-common && \vi 
-#    apt -y autoclean && \
-#    apt -y dist-upgrade && \
-#    apt-get install -y build-essential
-
-# consider openjdk-11-gre-headless or openjdk-8-jre-headless
-
 # Install the JAVA 11 JRE
 ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 RUN echo "$LOG_TAG Install java11" && \
