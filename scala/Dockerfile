@@ -1,8 +1,8 @@
 FROM sparkdev-base:latest
 MAINTAINER Johnny Foulds <hfoulds@gmail.com>
 
-ENV SCALA_VERSION="2.12.8"
 ENV BASE_VERSION="0.0.1"
+ENV SCALA_VERSION="2.12.8"
 ENV LOG_TAG="[SPARK_SCALA_${BASE_VERSION}]:"
 
 RUN echo "$LOG_TAG update" && \
