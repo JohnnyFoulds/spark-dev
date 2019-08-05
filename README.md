@@ -22,10 +22,11 @@ This image is build `FROM sparkdev-base` and installs Scala 2.12.8. A later vers
 ### Spark
 The image is build `FROM sparkdev-scala` and installs spark-2.4.3-bin-hadoop2.7.
 
-## Apache Zeppelin
-An important part of the development environment will also be to have Zeppelin available, the intention is to have that as a new Dockerfile that builds on the original environment created in this project.
-
-A possible shortcut to all of this is to just use the official Apache Zeppelin container on [Docker Hub](https://hub.docker.com/r/apache/zeppelin) and this will definitely be used as reference.
+To use this spark Image the following commands can be excuted:
+```
+docker run -it sparkdev-spark
+spark-shell
+```
 
 ## Lessons Learned
 You can see that although an attempt is made to install the minimum required components the Docker Images still grows in size rapidly.
