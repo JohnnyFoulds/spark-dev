@@ -12,7 +12,7 @@ RUN echo "$LOG_TAG update" && \
 
 RUN echo "$LOG_TAG installing scala-${SCALA_VERSION}" && \
 	wget www.scala-lang.org/files/archive/scala-${SCALA_VERSION}.deb && \
-	dpkg -i ${SCALA_VERSION}.deb
+	dpkg -i scala-${SCALA_VERSION}.deb
     
 	
 # perform the final cleanup

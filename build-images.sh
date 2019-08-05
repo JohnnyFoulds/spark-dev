@@ -4,3 +4,4 @@
 set -e
 
 docker build -t sparkdev-base:latest ./base
+docker build -t sparkdev-scala:latest ./scala
