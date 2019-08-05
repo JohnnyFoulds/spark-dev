@@ -17,7 +17,7 @@ RUN echo "$LOG_TAG install basic packages" && \
 #    apt-get -y update && \
 #    apt-get install -y locales && \
 #    locale-gen $LANG && \
-#    apt-get install -y software-properties-common && \
+#    apt-get install -y software-properties-common && \vi 
 #    apt -y autoclean && \
 #    apt -y dist-upgrade && \
 #    apt-get install -y build-essential
