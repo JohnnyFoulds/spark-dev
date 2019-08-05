@@ -34,5 +34,5 @@ You can see that although an attempt is made to install the minimum required com
 ![Docker Image Sizes](images/image-sizes.png)
 
 Unless you want something very specific, perhaps a development environment with specific version numbers, the effort might be better spend to just use existing Docker Images from "official" sources such as these:
-Cloudera Quickstart Image - `docker pull cloudera/quickstart:latest`
-Apache Zeppelin Image - `docker pull apache/zeppelin:0.8.1`
+- Cloudera Quickstart Image - `docker pull cloudera/quickstart:latest`
+- Apache Zeppelin Image - `docker pull apache/zeppelin:0.8.1`
